@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berserk</title>
+    <link rel="icon" href= "resources/pictures/puck1-fotor-20231228235729.png" >
+    
+    <link rel="stylesheet" href="landingPage.css">
+    <script defer src="landingPage.js"></script>
+</head>
+
+<body>
+    
+    <div class="headerBar">
+        <div class="leftBarContainer">
+            <div class="logoImageContainer">
+                <img class="logoImage" src="resources/pictures/tablet.png">
+            </div>
+            <div class="logoBerserk">
+                Berserk
+            </div>
+
+            <img id="audioController" src="resources/pictures/audioControllerOff.png"
+                onclick="audioController(); imageChange();">
+
+            <div class="sourceContainer">
+                <button class="link" onclick="showOrHide()">Sources</button>
+                <div class="dropdownContent">
+                    <div class = "sourceC">First background source: <a class = "sourcesLink" href=https://wallpapers.com/berserk target="_blank">Backgrounds</a> </div>
+                    <div class = "sourceC">First background source: <a class = "sourcesLink" href=https://www.clipartmax.com/middle/m2H7N4Z5G6G6A0N4_berserk-laughing-puck-berserk-laughing-puck/ target="_blank">Png pictures</a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightBarContainer">
+            <div class="rightBarStuff">
+                <a class="about" href="#">
+                    About
+                </a>
+                <img class="separator" src="resources/pictures/pinpng.com-berserk-png-2666027.png">
+                <a class="characters" href="#">
+                    Characters
+                </a>
+                <img class="separator" src="resources/pictures/casca2.png">
+                <a class="faq" href="#">
+                    FAQ
+                </a>
+                <img class="separator" src="resources/pictures/Daco_4859133.png">
+                <a class="contact" href="#">
+                    Contact </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay">
+        <div class="video-container">
+            <video id="background" muted autoplay loop>
+                <source src="resources/video//Guts Horizontal (online-video-cutter.com).mp4" type="video/mp4">
+            </video>
+            <audio id="backgroundMusic" src="resources/audio/guts.mp3" loop></audio>
+        </div>
+        <div class="content-wrapper">
+            <div class='content-container'>
+                <div class="greetings"> Nice of you to take a break with Guts!<br>
+                    Help Guts keep the fight going.<br>
+                </div>
+                <div class="donateNowContainer">
+
+                    <a class="donateNow" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Donate Now!</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondBackground">
+        <div class="secondContent">
+            <div class="secondHeading">
+                Guts has something for you...
+            </div>
+            <div class="secondInfoContainer">
+                <div class="lemonContainer">
+                    <a class="linkI" href="https://www.youtube.com/watch?v=G-pt948UOpE&ab_channel=Anime" target="_blank"><video class = "lemonImage" src = "resources/video/lemon.mp4" muted autoplay loop></video></a>
+                    <div class="lemonSubtext">Lemon!</div>
+                </div>
+
+                <div class="berserkerContainer">
+                    <a class="linkI" href="https://www.youtube.com/watch?v=4ZVt_R1xVgA&ab_channel=UkrTrashDub2.0" target="_blank"><video class="berserkerImage" src="resources/video/berserker.mp4" muted autoplay loop></video></a>
+                    <div class="berserkerSubtext">Berserker(Ukrainian version)</div>
+                </div>
+
+                <div class="readBerserkContainer">
+                    <a class="linkI" href="https://www.youtube.com/watch?v=IA9x-UGeR5E&ab_channel=TheMango" target="_blank"><video class="readBerserkImage" src="resources/video/readberserk.mp4" muted autoplay loop></video></a>
+                    <div class="readBerserkSubtext">How it feels to Read Berserk</div>
+                </div>
+
+                <div class="berserkerContainer">
+                    <a class="linkI" href="https://www.youtube.com/watch?v=NSjDDxQvD1k&list=LL&index=3&ab_channel=whiteoppressor" target="_blank"><video class="beHappyImage" src="resources/video/Guts wants to he happy.mp4" muted autoplay loop></video></a>
+                    <div class="berserkerSubtext">Happiness</div>
+                </div>
+
+                <div class="berserkerContainer">
+                    <a class="linkI" href="https://www.youtube.com/watch?v=eyu0SDWtj9k&ab_channel=Mickeybeast" target="_blank"><video class="iAmStillHereImage" src="resources/video/istillhere.mp4" muted autoplay loop></video></a>
+                    <div class="berserkerSubtext">I'm Still Here</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layer3">
+        <!-- <a class="layer3BgSource" href="https://www.pixiv.net/en/users/1508165" target="_blank">Background illustration by: ryosios</a> -->
+        <div class="layer3Text">
+            <div class="layer3Quote">
+                "You’re going to be all right. You just stumbled over a stone in the road. It means nothing. Your goal lies far beyond this. Doesn’t it? I’m sure you’ll overcome this. You’ll walk again… soon."
+            </div>
+            <div class="layer3QuoteFrom">
+                -Guts
+            </div>
+        </div>
+    </div>
+   
+    <div class="footerLayer">
+        <div class="footerLayerBg">
+            <a class="footerLayerAuthor" href="" target="_blank"> 
+                Webpage by: Ihor Kvasha
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

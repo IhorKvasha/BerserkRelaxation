@@ -1,0 +1,511 @@
+html {
+	margin: 0;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+.headerBar {
+	width: 100%;
+	top: 0;
+	height: 55px;
+	/* padding-top: 0px; */
+	/* height: ; */
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: space-between;
+	/* align-items: center; */
+	background-color: grey;
+	opacity: 0.9;
+	text-decoration: none;
+	position: fixed;
+	z-index: 20;
+}
+/* .rightBarContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60%;
+}
+
+
+
+.rightBarStuff {
+	position: relative;
+	color: white;
+	width: 27em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 2.5vw; 
+} */
+
+
+.leftBarContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 16em;
+	
+}
+
+.logoContainer {
+	margin: 0.7em 0 0.7em 2.5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 8.8em;
+	
+	text-decoration: none;
+}
+
+.logoBerserk {
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	width: 5.2em;
+	letter-spacing: 0.015em;
+	font-family: 'melancholy', sans-serif;
+}
+
+.logoImageContainer {
+	display: flex;
+	align-items: center;
+	margin-right: 0.5em;
+}
+
+
+
+.logoImage {
+	width: 4.5em;
+}
+
+#audioController {
+	margin: 0.7em 0 0.7em 2.5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 8.8em;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 100%;
+}
+
+.sourceContainer {
+	margin: 0.7em 0 0.7em 2.5vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.link {
+	border: none;
+	background: rgb(100, 100, 100);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 1.3em;
+	border: 3px solid;
+	border-radius: 1em;
+	position: relative;
+	font-family: 'izayoi';
+	animation: colorChange 0.75s infinite;
+	animation-direction: alternate;
+}
+
+.link:hover {
+	background: blue;
+}
+
+.sourcesLink {
+    position: relative;
+    color: rgb(98, 148, 255);
+    word-wrap: break-word;
+}
+
+.dm {
+    font-size: 1.2em;
+    color: rgb(211, 247, 164);
+}
+
+.dropdownContent {
+	position: relative;
+	bottom: -46px;
+	left: -18.4em;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 0.75rem;
+	border-radius: 0.25rem;
+	flex-direction: column;
+	width: 30em;
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+.rightBarContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60%;
+}
+
+
+
+.rightBarStuff {
+	position: relative;
+	color: black;
+	width: 27em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 2.5vw; 
+}
+
+.greetings {
+	font-size: 2.2em;
+	text-shadow: 0 0 0.8em rgb(255, 255, 255);
+	text-align: center;
+	font-family: 'kawashiro';
+}
+
+
+.donateNow {
+	color: white;
+	border: 0.2em solid white;
+	border-radius: 2em;
+	width: 10em;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.2em;
+	text-decoration: none;
+	background-image: linear-gradient(
+		rgba(250, 0, 0, 0.5),
+		rgba(107, 39, 0, 0.5)
+	);
+	transition: 0.3s;
+	font-family: 'rubik	';
+}
+
+.about,
+.characters,
+.faq,
+.contact {
+	font-size: 1.1em;
+	text-decoration: none;
+	color: black;
+	font-family: 'izayoi';
+	position: relative;
+	padding: 0 6px;
+}
+.underlined-text::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: blue; /* Цвет подчеркивания */
+	bottom: 0;
+	left: 0;
+	transition: width 0.3s ease; /* Длительность и тип анимации */
+}
+
+.underlined-text:hover::before {
+	width: 100%; /* При наведении курсора, увеличиваем ширину до 100% */
+}
+.separator {
+	width: 2.5em;
+	height: 2.5em;
+	filter: hue-rotate(100deg);
+}
+.layer {
+	position: relative;
+	/* width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.5; 
+    text-decoration: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.overlay {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video-container {
+	position: absolute;
+	inset: 0;
+	
+}
+
+.video-container video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+}
+
+.content-wrapper {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	inset: 0;
+	height: auto;
+	z-index: 10;
+	color: #fff;
+
+	text-align: center;
+}
+
+.content-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.2rem;
+	background-color: #000;
+	padding: 1.5rem;
+	border-radius: 0.6rem;
+}
+
+.donate-button {
+	display: inline-block;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.layerContainer {
+	width: 85%;
+	height: 100%;
+	border-radius: 1.5em;
+	margin: 9em auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 2em rgb(69, 69, 69);
+}
+
+.secondBackground {
+	height: 450px;
+	width: 100%; 
+	background-image: linear-gradient(to bottom, #342929, #000000);
+}
+
+.secondContent{
+    padding-top: 1em;
+}
+
+.secondHeading {
+    font-size: 2em;
+    text-align: center;
+	color: white;
+    margin: 0.5em 1em 1.5em 1em;
+    font-family: "rubik";
+}
+.secondInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 2.5em;    
+    flex-wrap: wrap;
+}
+
+.lemonImage, .berserkerImage, .readBerserkImage, .beHappyImage, .iAmStillHereImage {
+    width: 12em;
+    height: 14em;
+    object-fit: cover;
+    border: 0.3em solid rgb(255, 255, 255);
+    border-radius: 1.5em;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s;
+    margin: -0.5em -1em -1em -1em;
+}
+
+.lemonImage:hover, .berserkerImage:hover, .readBerserkImage:hover, .beHappyImage:hover, .iAmStillHereImage:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 0 30px rgb(2, 173, 164); */
+	box-shadow: 0 0 30px rgb(61, 19, 19);
+}
+
+.lemonContainer, .berserkerContainer, .readBerserkContainer, .beHappyContainer, .iAmStillHereContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0px;
+}
+
+.lemonSubtext, .berserkerSubtext, .readBerserkSubtext, .beHappySubtext, .iAmStillHereSubtext {
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+    margin: 1em 0 1em 0;
+    font-family: "lunatic";
+    z-index: 2;
+}
+
+.linkI {
+    margin: 1em 2em 0 2em;
+    border-radius: 1.5em;
+}
+
+.sourceC,
+.sourcesLink {
+	font-size: 0.75em;
+}
+
+.layer3 {
+	background-image: url(resources/pictures/griff.png), url(resources/pictures/cropped-3840-2160-613351.jpg), url(resources/pictures/griffit-2048x1162px.png);
+	background-size: cover;
+	background-repeat: no-repeat, repeat, repeat;
+	object-fit: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	filter: brightness(1.1);
+	transition: background-image 0.5s ease-in-out;
+	animation: imageTransition 50s infinite;
+}
+
+@keyframes imageTransition {
+	0%, 26%{
+		background-image: url(resources/pictures/griff.png);
+	}
+	33%, 59% {
+		background-image: url(resources/pictures/cropped-3840-2160-613351.jpg);
+	}
+	66%, 92% {
+		background-image: url(resources/pictures/griffit-2048x1162px.png);
+	}
+	100% {
+		background-image: url(resources/pictures/griff.png);
+	}
+}
+
+
+
+.layer3BgSource {
+    background: black;
+    border-radius: 1em;
+    position: absolute;
+    padding: 7px;
+    color: white;
+    display: block;
+    bottom: 5px;
+}
+
+.layer3Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 1em;
+    text-shadow: 0 0 1em black, 0 0 2em black;
+    /* font-family: "hakugyokurou"; */
+    letter-spacing: 0.1em;
+    margin: 14em 0; /*12em 0 */
+}
+
+.layer3Quote {
+    font-size: 3em;
+    text-align: center;
+    font-style: italic;
+}
+.layer3QuoteFrom {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+
+
+.footerLayerBg {
+    background: rgb(19, 25, 41);
+    padding: 1.25em 0;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+
+.footerLayerAuthor {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    font-family: "izayoi";
+}
+
+@font-face {
+	font-family: "hakugyokurou";
+	src: url(resources/fonts/hakugyokurou.ttf);
+}
+
+@font-face {
+	font-family: baloo;
+	src: url(/resources/fonts/Baloo2-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: "berserker";
+	src: url(/resources/fonts/Berserk\ Warrior.ttf);
+}
+@font-face {
+    font-family: "izayoi";
+    src: url(resources/fonts/izayoiMonospaced.ttf);
+}
+
+@font-face {
+    font-family: "kawashiro";
+    src: url(resources/fonts/kawashiroGothic.ttf);
+}
+
+@font-face {
+	font-family: "rubik";
+	src: url(resources/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: 'melancholy';
+	src: url('resources/fonts/melancholy.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'inter';
+	src: url(resources/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@keyframes colorChange {
+    0% {
+        background: rgb(255, 109, 109);
+    }
+    100% {
+        background: rgb(143, 0, 55);
+    }
+}
