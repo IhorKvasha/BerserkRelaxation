@@ -11,26 +11,14 @@ body {
 	width: 100%;
 	top: 0;
 	height: 55px;
-	/* padding-top: 0px; */
-	/* height: ; */
 	display: flex;
-	/* flex-direction: row; */
 	justify-content: space-between;
-	/* align-items: center; */
 	background-color: grey;
 	opacity: 0.9;
 	text-decoration: none;
 	position: fixed;
 	z-index: 20;
 }
-/* .rightBarContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 60%;
-}
-
-
 
 .rightBarStuff {
 	position: relative;
@@ -41,8 +29,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-right: 2.5vw; 
-} */
-
+} 
 
 .leftBarContainer {
 	display: flex;
@@ -78,8 +65,6 @@ body {
 	align-items: center;
 	margin-right: 0.5em;
 }
-
-
 
 .logoImage {
 	width: 4.5em;
@@ -135,17 +120,17 @@ body {
 
 .dropdownContent {
 	position: relative;
-	bottom: -46px;
-	left: -18.4em;
+	bottom: -4rem;
+	left: -13.65rem;
 	top: 100%;
 	background-color: rgba(0, 0, 0, 0.9);
 	padding: 0.75rem;
 	border-radius: 0.25rem;
 	flex-direction: column;
-	width: 30em;
+	width: 20rem;
 	text-align: center;
 	color: white;
-	display: none;
+	display: none;;
 }
 
 .rightBarContainer {
@@ -154,8 +139,6 @@ body {
 	align-items: center;
 	margin-left: 60%;
 }
-
-
 
 .rightBarStuff {
 	position: relative;
@@ -174,7 +157,6 @@ body {
 	text-align: center;
 	font-family: 'kawashiro';
 }
-
 
 .donateNow {
 	color: white;
@@ -212,35 +194,26 @@ body {
 	position: absolute;
 	width: 0;
 	height: 2px;
-	background-color: blue; /* Цвет подчеркивания */
+	background-color: blue;
 	bottom: 0;
 	left: 0;
-	transition: width 0.3s ease; /* Длительность и тип анимации */
+	transition: width 0.3s ease;
 }
 
 .underlined-text:hover::before {
-	width: 100%; /* При наведении курсора, увеличиваем ширину до 100% */
+	width: 100%;
 }
+
 .separator {
 	width: 2.5em;
 	height: 2.5em;
 	filter: hue-rotate(100deg);
 }
+
 .layer {
 	position: relative;
-	/* width: 50%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    opacity: 0.5; 
-    text-decoration: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
+
 .overlay {
 	width: 100%;
 	height: 100vh;
@@ -252,15 +225,13 @@ body {
 
 .video-container {
 	position: absolute;
-	inset: 0;
-	
+	inset: 0;	
 }
 
 .video-container video {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
-	
+	object-fit: cover;	
 }
 
 .content-wrapper {
@@ -273,7 +244,6 @@ body {
 	height: auto;
 	z-index: 10;
 	color: #fff;
-
 	text-align: center;
 }
 
@@ -311,7 +281,8 @@ body {
 }
 
 .secondBackground {
-	height: 450px;
+	padding: 1em;
+	height: 485px;
 	width: 100%; 
 	background-image: linear-gradient(to bottom, #342929, #000000);
 }
@@ -324,7 +295,7 @@ body {
     font-size: 2em;
     text-align: center;
 	color: white;
-    margin: 0.5em 1em 1.5em 1em;
+    margin: .9em 1em 1.1em 1em;
     font-family: "rubik";
 }
 .secondInfoContainer {
@@ -348,7 +319,6 @@ body {
 
 .lemonImage:hover, .berserkerImage:hover, .readBerserkImage:hover, .beHappyImage:hover, .iAmStillHereImage:hover {
     transform: scale(1.05);
-    /* box-shadow: 0 0 30px rgb(2, 173, 164); */
 	box-shadow: 0 0 30px rgb(61, 19, 19);
 }
 
@@ -363,9 +333,10 @@ body {
     text-align: center;
     color: white;
     font-size: 1.7em;
-    margin: 1em 0 1em 0;
+    margin: 1.2em 0 1em 0;
     font-family: "lunatic";
     z-index: 2;
+	font-size: 1.4em;
 }
 
 .linkI {
@@ -375,7 +346,7 @@ body {
 
 .sourceC,
 .sourcesLink {
-	font-size: 0.75em;
+	font-size: 0.9em;
 }
 
 .layer3 {
@@ -407,8 +378,6 @@ body {
 	}
 }
 
-
-
 .layer3BgSource {
     background: black;
     border-radius: 1em;
@@ -427,23 +396,23 @@ body {
     color: white;
     border-radius: 1em;
     text-shadow: 0 0 1em black, 0 0 2em black;
-    /* font-family: "hakugyokurou"; */
     letter-spacing: 0.1em;
-    margin: 14em 0; /*12em 0 */
+    margin: 14em 0;
 }
 
 .layer3Quote {
     font-size: 3em;
     text-align: center;
     font-style: italic;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 2rem;
 }
+
 .layer3QuoteFrom {
     text-align: center;
     margin-top: 2em;
     font-size: 2em;
 }
-
-
 
 .footerLayerBg {
     background: rgb(19, 25, 41);
@@ -459,7 +428,6 @@ body {
     color: white;
     text-align: center;
     font-size: 0.8em;
-    margin-top: 0.5em;
     font-family: "izayoi";
 }
 
@@ -497,15 +465,18 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'inter';
 	src: url(resources/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 @keyframes colorChange {
-    0% {
-        background: rgb(255, 109, 109);
-    }
-    100% {
-        background: rgb(143, 0, 55);
-    }
+	0% {
+		background: rgb(0, 0, 0);
+	}
+
+	100% {
+		background: rgb(120, 8, 8);
+	}
 }

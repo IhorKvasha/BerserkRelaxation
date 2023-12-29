@@ -3,15 +3,15 @@ const audio = document.getElementById("backgroundMusic");
 
 window.addEventListener("DOMContentLoaded", () => {
     if (audio) {
-        audio.volume = 0; // начинаем с громкости 0
+        audio.volume = 0;
         audio.play();
 
         let volume = 0;
         let increaseVolumeInterval = setInterval(() => {
-            volume += 0.01; // увеличиваем громкость на 0.01 каждые 100 мс
-            audio.volume = Math.min(volume, 1); // Ensure volume is within the range [0, 1]
+            volume += 0.01;
+            audio.volume = Math.min(volume, 1);
 
-            if (volume >= 1) { // если громкость достигла максимума, останавливаем увеличение
+            if (volume >= 1) {
                 clearInterval(increaseVolumeInterval);
             }
         }, 100);
@@ -44,19 +44,39 @@ function imageChange() {
 
 const dropdownContent = document.querySelector(".dropdownContent");
 
-function f() {
+function showDropdown() {
     dropdownContent.style.display = "flex";
 }
 
-function n() {
+function hideDropdown() {
     dropdownContent.style.display = "none";
 }
 
-function showOrHide() {
-    var computedStyle = window.getComputedStyle(dropdownContent);
-    if(computedStyle.display === "none") {
-        f()
+function toggleDropdown() {
+    const computedStyle = window.getComputedStyle(dropdownContent);
+    if (computedStyle.display === "none") {
+        showDropdown();
     } else {
-        n()
+        hideDropdown();
+    }
+}
+
+function handleDocumentClick(event) {
+    const isClickInsideDropdown = dropdownContent.contains(event.target);
+    if (!isClickInsideDropdown) {
+        hideDropdown();
+        document.removeEventListener("click", handleDocumentClick);
+    }
+}
+
+function showOrHide(event) {
+    event.stopPropagation();
+    toggleDropdown();
+
+    const computedStyle = window.getComputedStyle(dropdownContent);
+    if (computedStyle.display === "flex") {
+        document.addEventListener("click", handleDocumentClick);
+    } else {
+        document.removeEventListener("click", handleDocumentClick);
     }
 }
