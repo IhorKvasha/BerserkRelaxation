@@ -281,7 +281,6 @@ body {
 }
 
 .secondBackground {
-	padding: 1em;
 	height: 485px;
 	width: 100%; 
 	background-image: linear-gradient(to bottom, #342929, #000000);
