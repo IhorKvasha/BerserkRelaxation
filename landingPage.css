@@ -170,9 +170,8 @@ body {
 	font-size: 1.2em;
 	text-decoration: none;
 	background-image: linear-gradient(
-		rgba(250, 0, 0, 0.5),
-		rgba(107, 39, 0, 0.5)
-	);
+	rgba(250, 0, 0, 0.5),
+	rgba(107, 39, 0, 0.5));
 	transition: 0.3s;
 	font-family: 'rubik	';
 }
